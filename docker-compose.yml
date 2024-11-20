@@ -1,0 +1,11 @@
+version: '3'
+services:
+  squish-test:
+    build: .
+    container_name: squish_poc
+    volumes:
+      - .:/app
+      - ./reports:/app/reports  # Mount reports directory to host
+    environment:
+      - DISPLAY=:99
+    command: ["squishrunner", "--testsuite", "/app/testsuite"]
