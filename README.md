@@ -85,22 +85,23 @@ docker-compose up
 Launch the Docker container.
 Run the Squish tests defined in the testsuite/ folder.
 Output test results to the reports/ folder.
+
 ## 5. Access Test Reports
-After the tests have executed, you can find the results in the reports/ directory. The reports may include logs, screenshots, and detailed results of the test run.
+ After the tests have executed, you can find the results in the reports/ directory. The reports may include logs, screenshots, and detailed results of the test run.
 
 # Test Suite Overview
 ## UI Automation
-UI interactions are handled using Squish and are defined in the testsuite/shared/page_objects/ directory.
+ UI interactions are handled using Squish and are defined in the testsuite/shared/page_objects/ directory.
 
-Page Object Model: The login_page.py script represents the login UI page and defines methods to interact with the UI elements (e.g., entering credentials, clicking buttons).
+ Page Object Model: The login_page.py script represents the login UI page and defines methods to interact with the UI elements (e.g., entering credentials, clicking buttons).
 
 ## API Automation
-API requests and validations are handled using Python and the requests library. The API client is structured in the testsuite/shared/api_client/ folder.
+ API requests and validations are handled using Python and the requests library. The API client is structured in the testsuite/shared/api_client/ folder.
 
-API Service Layer: The api_service.py script contains methods to send API requests (e.g., POST, GET) and validate their responses.
+ API Service Layer: The api_service.py script contains methods to send API requests (e.g., POST, GET) and validate their responses.
 
 ## Example Test Case: test_login.py
 The test_login.py script demonstrates how UI and API automation are combined. Here’s a high-level overview of what it does:
 
-## UI Automation: Automates the login process by interacting with the login page.
-## API Validation: After a successful login, it sends an API request to validate the user's session or retrieve user data.
+ UI Automation: Automates the login process by interacting with the login page.
+ API Validation: After a successful login, it sends an API request to validate the user's session or retrieve user data.
