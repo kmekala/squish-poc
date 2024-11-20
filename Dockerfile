@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Download and Install Squish using authentication
-RUN wget --user=mekala.kalyan@gmail.com --password=9Gananayaka https://download.froglogic.com/squish/squish-6.7.1-linux64.zip -O /tmp/squish.zip \
+RUN wget --user= --password= https://download.froglogic.com/squish/squish-6.7.1-linux64.zip -O /tmp/squish.zip \
     && unzip /tmp/squish.zip -d /opt/squish \
     && rm /tmp/squish.zip
 
